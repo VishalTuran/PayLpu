@@ -2,6 +2,6 @@
     <string name="app_name">PayLpu</string>
     <string name="title_activity_maps">Map</string>
 
-    <string name="map_api_key">AIzaSyDjTALMXNomDdI10_g0-cFHr_7ETz95K9k</string>
+    <string name="map_api_key">YOUR_OWN_API</string>
     <string name="enter_house_flat_block_no"><font size="16">Enter House/Flat/Block No.</font></string>
 </resources>
