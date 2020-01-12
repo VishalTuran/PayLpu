@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginScreen"
+    android:layout_gravity="center"
+    android:background="@drawable/blue_back"
+    >
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:fontFamily="@font/raleway"
+        android:text="Hello"
+        android:textColor="@android:color/black"
+        android:textSize="70sp"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="@font/raleway"
+        android:textAlignment="center"
+        android:text="Enter your Mobile Number to Login"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mobileCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:cardElevation="10dp"
+        android:layout_below="@+id/textView3"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/cellphone"
+            android:layout_marginLeft="@dimen/_5sdp" />
+
+        <EditText
+            android:id="@+id/phoneSignIn"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:hint="Mobile"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:background="@null"
+            android:inputType="number"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway"
+        android:id="@+id/signInText"
+        android:maxLines="1"
+        android:layout_marginRight="@dimen/_66sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_below="@+id/mobileCardView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:cardCornerRadius="26dp"
+        android:id="@+id/signInButtonCard"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/mobileCardView"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_right_bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

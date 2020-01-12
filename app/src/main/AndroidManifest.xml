@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csemaster.paylpu">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddressActivity"></activity>
+        <activity android:name=".Activities.MapActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MyOrderActivity" />
+        <activity android:name=".Activities.FirstActivity" />
+        <activity android:name=".Activities.QRScanner" />
+        <activity android:name=".Activities.PaymentActivity" />
+        <activity android:name=".Activities.ShopActivity" />
+        <activity android:name=".Activities.MenuActivity" />
+        <activity android:name=".Activities.QRActivity" />
+        <activity android:name=".Activities.Dashboard" />
+        <activity android:name=".Activities.SplashActivity">
+
+        </activity>
+        <activity android:name=".Activities.UserInfoActivity" />
+        <activity android:name=".Activities.OtpVerificationActivity" />
+        <activity android:name=".Activities.LoginScreen" />
+        <activity android:name=".Activities.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_cI88YgSZyoaRvK" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+    </application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:id="@+id/cartItemImage"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemNameCartValue"
+        android:text="Item Name"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway"/>
+
+    <LinearLayout
+        android:layout_gravity="center_vertical|end"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartValues"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/minus"
+            android:id="@+id/minusFab"
+            android:layout_gravity="center"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalItem"
+            android:text="1"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            android:id="@+id/plusFab"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

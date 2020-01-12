@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/orderShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Order From ShopName"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="OrderId: 9451684143654"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/orderId"
+                android:textColor="@android:color/black"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderId"
+                android:id="@+id/singleOrderItemRV"
+                android:layout_margin="@dimen/_5sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderDate"
+                android:text="Date"
+                android:textColor="@android:color/black"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_below="@+id/singleOrderItemRV"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderTotalPrice"
+                android:text="Total Price"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_below="@+id/singleOrderItemRV"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

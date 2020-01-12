@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuSingleItem"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:id="@+id/foodImage"
+                android:background="@drawable/circularimageview"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/veg_biryani"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veg Biryani"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/foodImage"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="20sp"
+            android:id="@+id/foodItemName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 50"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="20sp"
+            android:id="@+id/foodPrice"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foodItemName"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_toRightOf="@id/foodImage"
+            >
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add to Cart"
+                android:id="@+id/addtoCartButton"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

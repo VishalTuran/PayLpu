@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "378242115132",
+    "firebase_url": "https://paylpu.firebaseio.com",
+    "project_id": "paylpu",
+    "storage_bucket": "paylpu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378242115132:android:648a2e2fa406d28cca0539",
+        "android_client_info": {
+          "package_name": "com.csemaster.paylpu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378242115132-alhocmu4f0fpaqlnce0de7inb3c96m09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.csemaster.paylpu",
+            "certificate_hash": "03fe9dafb2cceaaa4ecd6d62564685a28185bc6d"
+          }
+        },
+        {
+          "client_id": "378242115132-6f5uq2dlftn8uh7dg87j8o1vovohqksj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRpq-wPPGyINgZZgmXOVO7-pZTWhjmBKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378242115132-6f5uq2dlftn8uh7dg87j8o1vovohqksj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
