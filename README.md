@@ -1,5 +1,6 @@
 # PayLpu
 A Food Delivery App with Maps and UPI Payment Integration.
+With Firebase Cloudstore as Backend.
 
 App Screenshot:
 ![Screenshot_2020-01-20-15-30-04-001_com csemaster paylpu](https://user-images.githubusercontent.com/49347841/73130499-6de35400-401f-11ea-9290-b49597e5b7b2.jpg)
